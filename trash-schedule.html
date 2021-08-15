@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="zxx" class="js">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Softnio">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="@@page-discription">
+    <!-- Fav Icon  -->
+    <link rel="shortcut icon" href="images/favicon.png">
+    <!-- Page Title  -->
+    <title>Jadwal Setor Sampah | SAMUNE Administrator</title>
+    <!-- StyleSheets  -->
+    <link rel="stylesheet" href="assets/css/dashlite.css?ver=1.4.0">
+    <link id="skin-default" rel="stylesheet" href="assets/css/theme.css?ver=1.4.0">
+</head>
+
+<body class="nk-body bg-lighter npc-general has-sidebar ">
+    <div class="nk-app-root">
+        <!-- main @s -->
+        <div class="nk-main ">
+            <!-- sidebar @s -->
+            <div class="nk-sidebar nk-sidebar-fixed is-dark " data-content="sidebarMenu">
+                <div class="nk-sidebar-element nk-sidebar-head">
+                    <div class="nk-sidebar-brand">
+                        <a href="index.html" class="logo-link nk-sidebar-logo d-flex align-items-center justify-content-center">
+                            <img class="logo-light logo-img" src="images/logo.png" alt="logo">
+                            <span class="ml-2 text-white h5 bold">SAMUNE</span>
+                        </a>
+                    </div>
+                    <div class="nk-menu-trigger mr-n2">
+                        <a href="#" class="nk-nav-toggle nk-quick-nav-icon d-xl-none" data-target="sidebarMenu"><em class="icon ni ni-arrow-left"></em></a>
+                    </div>
+                </div><!-- .nk-sidebar-element -->
+                <div class="nk-sidebar-element">
+                    <div class="nk-sidebar-content">
+                        <div class="nk-sidebar-menu" data-simplebar>
+                            <ul class="nk-menu">
+                                <li class="nk-menu-heading">
+                                    <h6 class="overline-title text-primary-alt">General</h6>
+                                </li>
+                                <li class="nk-menu-item">
+                                    <a href="index.html" class="nk-menu-link">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-dashboard"></em></span>
+                                        <span class="nk-menu-text">Dashboard</span>
+                                    </a>
+                                </li><!-- .nk-menu-item -->
+                                <li class="nk-menu-item">
+                                    <a href="route-driver.html" class="nk-menu-link">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-tranx"></em></span>
+                                        <span class="nk-menu-text">Rute Driver</span>
+                                    </a>
+                                </li><!-- .nk-menu-item -->
+                                <li class="nk-menu-item">
+                                    <a href="trash-schedule.html" class="nk-menu-link">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-files"></em></span>
+                                        <span class="nk-menu-text">Jadwal Setor Sampah</span>
+                                    </a>
+                                </li>
+                                <li class="nk-menu-heading">
+                                    <h6 class="overline-title text-primary-alt">Master Data</h6>
+                                </li>
+                                <li class="nk-menu-item">
+                                    <a href="reward.html" class="nk-menu-link">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-star-round"></em></span>
+                                        <span class="nk-menu-text">Reward</span>
+                                    </a>
+                                </li><!-- .nk-menu-item -->
+                                <li class="nk-menu-item">
+                                    <a href="medias.html" class="nk-menu-link">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-img-fill"></em></span>
+                                        <span class="nk-menu-text">Medias</span>
+                                    </a>
+                                </li><!-- .nk-menu-item -->
+                                <li class="nk-menu-item">
+                                    <a href="notification.html" class="nk-menu-link">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-bell"></em></span>
+                                        <span class="nk-menu-text">Notification</span>
+                                    </a>
+                                </li><!-- .nk-menu-item -->
+                                <li class="nk-menu-item">
+                                    <a href="wallet.html" class="nk-menu-link">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-wallet"></em></span>
+                                        <span class="nk-menu-text">Wallet</span>
+                                    </a>    
+                                </li><!-- .nk-menu-item -->
+                                <li class="nk-menu-item">
+                                    <a href="users.html" class="nk-menu-link">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-users"></em></span>
+                                        <span class="nk-menu-text">Users</span>
+                                    </a>
+                                </li><!-- .nk-menu-item -->
+                            </ul><!-- .nk-menu -->
+                        </div><!-- .nk-sidebar-menu -->
+                    </div><!-- .nk-sidebar-content -->
+                </div><!-- .nk-sidebar-element -->
+            </div>
+            <!-- sidebar @e -->
+            <!-- wrap @s -->
+            <div class="nk-wrap ">
+                <!-- main header @s -->
+                <div class="nk-header nk-header-fixed is-light">
+                    <div class="container-fluid">
+                        <div class="nk-header-wrap">
+                            <div class="nk-menu-trigger d-xl-none ml-n1">
+                                <a href="#" class="nk-nav-toggle nk-quick-nav-icon" data-target="sidebarMenu"><em class="icon ni ni-menu"></em></a>
+                            </div>
+                            <div class="nk-header-brand d-xl-none">
+                                <a href="index.html" class="logo-link">
+                                    <img class="logo-light logo-img" src="images/logo.png" alt="logo">
+                                </a>
+                            </div><!-- .nk-header-brand -->
+                            <div class="nk-header-tools">
+                                <ul class="nk-quick-nav">
+                                    <li class="dropdown user-dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            <div class="user-toggle">
+                                                <div class="user-avatar sm">
+                                                    <em class="icon ni ni-user-alt"></em>
+                                                </div>
+                                                <div class="user-info d-none d-md-block">
+                                                    <div class="user-status">Administrator</div>
+                                                    <div class="user-name dropdown-indicator">Alif Irfandi</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-md dropdown-menu-right dropdown-menu-s1">
+                                            <div class="dropdown-inner user-card-wrap bg-lighter d-none d-md-block">
+                                                <div class="user-card">
+                                                    <div class="user-avatar">
+                                                        <span>AB</span>
+                                                    </div>
+                                                    <div class="user-info">
+                                                        <span class="lead-text">Alif Irfandi</span>
+                                                        <span class="sub-text">alifirfandi@samune.com</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown-inner">
+                                                <ul class="link-list">
+                                                    <li><a href="#"><em class="icon ni ni-user-alt"></em><span>View Profile</span></a></li>
+                                                    <li><a href="#"><em class="icon ni ni-setting-alt"></em><span>Account Setting</span></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="dropdown-inner">
+                                                <ul class="link-list">
+                                                    <li><a href="auth-login.html"><em class="icon ni ni-signout"></em><span>Sign out</span></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li><!-- .dropdown -->
+                                    <li class="dropdown notification-dropdown mr-n1">
+                                        <a href="#" class="dropdown-toggle nk-quick-nav-icon" data-toggle="dropdown">
+                                            <div class="icon-status icon-status-info"><em class="icon ni ni-bell"></em></div>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-xl dropdown-menu-right dropdown-menu-s1">
+                                            <div class="dropdown-head">
+                                                <span class="sub-title nk-dropdown-title">Notifications</span>
+                                                <a href="#">Mark All as Read</a>
+                                            </div>
+                                            <div class="dropdown-body">
+                                                <div class="nk-notification">
+                                                    <div class="nk-notification-item dropdown-inner">
+                                                        <div class="nk-notification-icon">
+                                                            <em class="icon icon-circle bg-warning-dim ni ni-curve-down-right"></em>
+                                                        </div>
+                                                        <div class="nk-notification-content">
+                                                            <div class="nk-notification-text">You have requested to <span>Widthdrawl</span></div>
+                                                            <div class="nk-notification-time">2 hrs ago</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="nk-notification-item dropdown-inner">
+                                                        <div class="nk-notification-icon">
+                                                            <em class="icon icon-circle bg-success-dim ni ni-curve-down-left"></em>
+                                                        </div>
+                                                        <div class="nk-notification-content">
+                                                            <div class="nk-notification-text">Your <span>Deposit Order</span> is placed</div>
+                                                            <div class="nk-notification-time">2 hrs ago</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="nk-notification-item dropdown-inner">
+                                                        <div class="nk-notification-icon">
+                                                            <em class="icon icon-circle bg-warning-dim ni ni-curve-down-right"></em>
+                                                        </div>
+                                                        <div class="nk-notification-content">
+                                                            <div class="nk-notification-text">You have requested to <span>Widthdrawl</span></div>
+                                                            <div class="nk-notification-time">2 hrs ago</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="nk-notification-item dropdown-inner">
+                                                        <div class="nk-notification-icon">
+                                                            <em class="icon icon-circle bg-success-dim ni ni-curve-down-left"></em>
+                                                        </div>
+                                                        <div class="nk-notification-content">
+                                                            <div class="nk-notification-text">Your <span>Deposit Order</span> is placed</div>
+                                                            <div class="nk-notification-time">2 hrs ago</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="nk-notification-item dropdown-inner">
+                                                        <div class="nk-notification-icon">
+                                                            <em class="icon icon-circle bg-warning-dim ni ni-curve-down-right"></em>
+                                                        </div>
+                                                        <div class="nk-notification-content">
+                                                            <div class="nk-notification-text">You have requested to <span>Widthdrawl</span></div>
+                                                            <div class="nk-notification-time">2 hrs ago</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="nk-notification-item dropdown-inner">
+                                                        <div class="nk-notification-icon">
+                                                            <em class="icon icon-circle bg-success-dim ni ni-curve-down-left"></em>
+                                                        </div>
+                                                        <div class="nk-notification-content">
+                                                            <div class="nk-notification-text">Your <span>Deposit Order</span> is placed</div>
+                                                            <div class="nk-notification-time">2 hrs ago</div>
+                                                        </div>
+                                                    </div>
+                                                </div><!-- .nk-notification -->
+                                            </div><!-- .nk-dropdown-body -->
+                                            <div class="dropdown-foot center">
+                                                <a href="#">View All</a>
+                                            </div>
+                                        </div>
+                                    </li><!-- .dropdown -->
+                                </ul><!-- .nk-quick-nav -->
+                            </div><!-- .nk-header-tools -->
+                        </div><!-- .nk-header-wrap -->
+                    </div><!-- .container-fliud -->
+                </div>
+                <!-- main header @e -->
+                <!-- content @s -->
+                <div class="nk-content ">
+                    <div class="container-fluid">
+                        <div class="nk-content-inner">
+                            <div class="nk-content-body">
+                                <div class="nk-block-head nk-block-head-sm">
+                                    <div class="nk-block-between g-3">
+                                        <div class="nk-block-head-content">
+                                            <h3 class="nk-block-title page-title">Jadwal Pengambilan Sampah</h3>
+                                            <div class="nk-block-des text-soft">
+                                                <p>Halaman yang berisi data tempat sampah pengguna dan juga membuat jadwal pengambilan sampah.</p>
+                                            </div>
+                                        </div><!-- .nk-block-head-content -->
+                                        <div class="nk-block-head-content">
+                                            <div class="toggle-wrap nk-block-tools-toggle">
+                                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalDefault">Buat Jadwal</button>
+                                            </div>
+                                        </div><!-- .nk-block-head-content -->
+                                    </div><!-- .nk-block-between -->
+                                </div><!-- .nk-block-head -->
+                                <div class="nk-block">
+                                    <div class="card card-bordered card-stretch">
+                                        <div class="card-inner-group">
+                                            <div class="card-inner">
+                                                <div class="card-title-group">
+                                                    <div class="card-title">
+                                                        <h5 class="title">Data Tempat Sampah Pengguna</h5>
+                                                    </div>
+                                                    <div class="card-tools mr-n1">
+                                                        <ul class="btn-toolbar gx-1">
+                                                            <li>
+                                                                <a href="#" class="search-toggle toggle-search btn btn-icon" data-target="search"><em class="icon ni ni-search"></em></a>
+                                                            </li><!-- li -->
+                                                        </ul><!-- .btn-toolbar -->
+                                                    </div><!-- .card-tools -->
+                                                    <div class="card-search search-wrap" data-search="search">
+                                                        <div class="search-content">
+                                                            <a href="#" class="search-back btn btn-icon toggle-search" data-target="search"><em class="icon ni ni-arrow-left"></em></a>
+                                                            <input type="text" class="form-control border-transparent form-focus-none" placeholder="Cari data tempat sampah">
+                                                            <button class="search-submit btn btn-icon"><em class="icon ni ni-search"></em></button>
+                                                        </div>
+                                                    </div><!-- .card-search -->
+                                                </div><!-- .card-title-group -->
+                                            </div><!-- .card-inner -->
+                                            <div class="card-inner p-0">
+                                                <div class="nk-tb-list nk-tb-tnx">
+                                                    <div class="nk-tb-item nk-tb-head">
+                                                        <div class="nk-tb-col"><span>Pengguna</span></div>
+                                                        <div class="nk-tb-col tb-col-lg"><span>Tempat Sampah</span></div>
+                                                        <div class="nk-tb-col text-right"><span>Poin</span></div>
+                                                        <div class="nk-tb-col text-right tb-col-sm"><span>Alamat</span></div>
+                                                        <div class="nk-tb-col nk-tb-col-tools"></div>
+                                                    </div><!-- .nk-tb-item -->
+                                                    <div class="nk-tb-item">
+                                                        <div class="nk-tb-col">
+                                                            <div class="nk-tnx-type">
+                                                                <div class="user-avatar mr-3">
+                                                                    <span>DS</span>
+                                                                </div>
+                                                                <div class="nk-tnx-type-text">
+                                                                    <span class="tb-lead">Alif Irfandi</span>
+                                                                    <span class="tb-date">18/10/2019</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-lg">
+                                                            <span class="tb-lead-sub">TEMPAT001</span>
+                                                            <span class="badge badge-dot badge-success">10%</span>
+                                                        </div>
+                                                        <div class="nk-tb-col text-right">
+                                                            <span class="tb-amount">1.200</span>
+                                                        </div>
+                                                        <div class="nk-tb-col text-right tb-col-sm">
+                                                            <span class="tb-amount">Dayeuhkolot</span>
+                                                            <span class="tb-amount-sm">Jl Terusan Buah Batu</span>
+                                                        </div>
+                                                        <div class="nk-tb-col nk-tb-col-tools">
+                                                            <ul class="nk-tb-actions gx-2">
+                                                                <li>
+                                                                    <div class="dropdown">
+                                                                        <a href="#" class="dropdown-toggle bg-white btn btn-sm btn-outline-light btn-icon" data-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
+                                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                                            <ul class="link-list-opt">
+                                                                                <li><a href="#tranxDetails" data-toggle="modal"><em class="icon ni ni-eye"></em><span>View Details</span></a></li>
+                                                                                <li><a href="#"><em class="icon ni ni-cross-round"></em><span>Banned</span></a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div><!-- .nk-tb-item -->
+                                                    <div class="nk-tb-item">
+                                                        <div class="nk-tb-col">
+                                                            <div class="nk-tnx-type">
+                                                                <div class="user-avatar mr-3 bg-pink">
+                                                                    <span>RW</span>
+                                                                </div>
+                                                                <div class="nk-tnx-type-text">
+                                                                    <span class="tb-lead">Radi Walker</span>
+                                                                    <span class="tb-date">18/10/2019</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-lg">
+                                                            <span class="tb-lead-sub">TEMPAT002</span>
+                                                            <span class="badge badge-dot badge-warning">45%</span>
+                                                        </div>
+                                                        <div class="nk-tb-col text-right">
+                                                            <span class="tb-amount">1.500</span>
+                                                        </div>
+                                                        <div class="nk-tb-col text-right tb-col-sm">
+                                                            <span class="tb-amount">Srengseng</span>
+                                                            <span class="tb-amount-sm">Jl Lapangan Bola</span>
+                                                        </div>
+                                                        <div class="nk-tb-col nk-tb-col-tools">
+                                                            <ul class="nk-tb-actions gx-2">
+                                                                <li>
+                                                                    <div class="dropdown">
+                                                                        <a href="#" class="dropdown-toggle bg-white btn btn-sm btn-outline-light btn-icon" data-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
+                                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                                            <ul class="link-list-opt">
+                                                                                <li><a href="#tranxDetails" data-toggle="modal"><em class="icon ni ni-eye"></em><span>View Details</span></a></li>
+                                                                                <li><a href="#"><em class="icon ni ni-cross-round"></em><span>Banned</span></a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div><!-- .nk-tb-item -->
+                                                    <div class="nk-tb-item">
+                                                        <div class="nk-tb-col">
+                                                            <div class="nk-tnx-type">
+                                                                <div class="user-avatar bg-warning mr-3">
+                                                                    <span>IO</span>
+                                                                </div>
+                                                                <div class="nk-tnx-type-text">
+                                                                    <span class="tb-lead">Idar Oliver</span>
+                                                                    <span class="tb-date">18/10/2019</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-lg">
+                                                            <span class="tb-lead-sub">TEMPAT003</span>
+                                                            <span class="badge badge-dot badge-danger">85%</span>
+                                                        </div>
+                                                        <div class="nk-tb-col text-right">
+                                                            <span class="tb-amount">600</span>
+                                                        </div>
+                                                        <div class="nk-tb-col text-right tb-col-sm">
+                                                            <span class="tb-amount">Baleendah</span>
+                                                            <span class="tb-amount-sm">Menara Laswi Residence No 16J</span>
+                                                        </div>
+                                                        <div class="nk-tb-col nk-tb-col-tools">
+                                                            <ul class="nk-tb-actions gx-2">
+                                                                <li class="nk-tb-action-hidden">
+                                                                    <a href="#" class="bg-white btn btn-sm btn-outline-light btn-icon" data-toggle="tooltip" data-placement="top" title="Approve"><em class="icon ni ni-done"></em></a>
+                                                                </li>
+                                                                <li class="nk-tb-action-hidden">
+                                                                    <a href="#tranxDetails" data-toggle="modal" class="bg-white btn btn-sm btn-outline-light btn-icon btn-tooltip" title="Details"><em class="icon ni ni-eye"></em></a>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="dropdown">
+                                                                        <a href="#" class="dropdown-toggle bg-white btn btn-sm btn-outline-light btn-icon" data-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
+                                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                                            <ul class="link-list-opt">
+                                                                                <li><a href="#"><em class="icon ni ni-done"></em><span>Approve</span></a></li>
+                                                                                <li><a href="#"><em class="icon ni ni-cross-round"></em><span>Reject</span></a></li>
+                                                                                <li><a href="#"><em class="icon ni ni-repeat"></em><span>Check</span></a></li>
+                                                                                <li><a href="#tranxDetails" data-toggle="modal"><em class="icon ni ni-eye"></em><span>View Details</span></a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div><!-- .nk-tb-item -->
+                                                    <div class="nk-tb-item">
+                                                        <div class="nk-tb-col">
+                                                            <div class="nk-tnx-type">
+                                                                <div class="user-avatar bg-success mr-3">
+                                                                    <span>IS</span>
+                                                                </div>
+                                                                <div class="nk-tnx-type-text">
+                                                                    <span class="tb-lead">Irad Sullivan</span>
+                                                                    <span class="tb-date">18/10/2019</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="nk-tb-col tb-col-lg">
+                                                            <span class="tb-lead-sub">TEMPAT004</span>
+                                                            <span class="badge badge-dot badge-warning">60%</span>
+                                                        </div>
+                                                        <div class="nk-tb-col text-right">
+                                                            <span class="tb-amount">250</span>
+                                                        </div>
+                                                        <div class="nk-tb-col text-right tb-col-sm">
+                                                            <span class="tb-amount">Kebon Jeruk</span>
+                                                            <span class="tb-amount-sm">Jl Raya Kebon Jeruk</span>
+                                                        </div>
+                                                        <div class="nk-tb-col nk-tb-col-tools">
+                                                            <ul class="nk-tb-actions gx-2">
+                                                                <li class="nk-tb-action-hidden">
+                                                                    <a href="#" class="bg-white btn btn-sm btn-outline-light btn-icon" data-toggle="tooltip" data-placement="top" title="Approve"><em class="icon ni ni-done"></em></a>
+                                                                </li>
+                                                                <li class="nk-tb-action-hidden">
+                                                                    <a href="#tranxDetails" data-toggle="modal" class="bg-white btn btn-sm btn-outline-light btn-icon btn-tooltip" title="Details"><em class="icon ni ni-eye"></em></a>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="dropdown">
+                                                                        <a href="#" class="dropdown-toggle bg-white btn btn-sm btn-outline-light btn-icon" data-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
+                                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                                            <ul class="link-list-opt">
+                                                                                <li><a href="#"><em class="icon ni ni-done"></em><span>Approve</span></a></li>
+                                                                                <li><a href="#"><em class="icon ni ni-cross-round"></em><span>Reject</span></a></li>
+                                                                                <li><a href="#"><em class="icon ni ni-repeat"></em><span>Check</span></a></li>
+                                                                                <li><a href="#tranxDetails" data-toggle="modal"><em class="icon ni ni-eye"></em><span>View Details</span></a></li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div><!-- .nk-tb-item -->
+                                                </div><!-- .nk-tb-list -->
+                                            </div><!-- .card-inner -->
+                                            <div class="card-inner">
+                                                <ul class="pagination justify-content-center justify-content-md-start">
+                                                    <li class="page-item"><a class="page-link" href="#">Prev</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                    <li class="page-item"><span class="page-link"><em class="icon ni ni-more-h"></em></span></li>
+                                                    <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">7</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                                </ul>
+                                            </div><!-- .card-inner -->
+                                        </div><!-- .card-inner-group -->
+                                    </div><!-- .card -->
+                                </div><!-- .nk-block -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- content @e -->
+
+                <!-- Modal -->
+                <div class="modal fade" tabindex="-1" id="modalDefault">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <a href="#" class="close" data-dismiss="modal" aria-label="Close">
+                                <em class="icon ni ni-cross"></em>
+                            </a>
+                            <div class="modal-header">
+                                <h5 class="modal-title">Modal Title</h5>
+                            </div>
+                            <div class="modal-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem similique earum necessitatibus nesciunt! Quia id expedita asperiores voluptatem odit quis fugit sapiente assumenda sunt voluptatibus atque facere autem, omnis explicabo.</p>
+                            </div>
+                            <div class="modal-footer bg-light">
+                                <span class="sub-text">Modal Footer Text</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- footer @s -->
+                <div class="nk-footer">
+                    <div class="container-fluid">
+                        <div class="nk-footer-wrap">
+                            <div class="nk-footer-copyright"> &copy; 2021 Sampah Pintar by <a href="#">SAMUNE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- footer @e -->
+            </div>
+            <!-- wrap @e -->
+        </div>
+        <!-- main @e -->
+    </div>
+    <!-- app-root @e -->
+    <!-- JavaScript -->
+    <script src="assets/js/bundle.js?ver=1.4.0"></script>
+    <script src="assets/js/scripts.js?ver=1.4.0"></script>
+    <script src="assets/js/charts/gd-analytics.js?ver=1.4.0"></script>
+    <script src="assets/js/libs/jqvmap.js?ver=1.4.0"></script>
+</body>
+
+</html>
